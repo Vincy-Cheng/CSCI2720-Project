@@ -2,6 +2,13 @@
 
 ## Group Members
 
+Alvin CHAN,
+Chun Yeung CHOW,
+Ngou Shan WONG,
+Siu Fung CHEUNG,
+Wing Lam CHENG,
+Yee Han CHENG
+
 ## Instructions
 To open this web app, do the following steps: 
 
