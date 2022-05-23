@@ -56,7 +56,9 @@ Everything is ok now! check with your public IP address.
 
 
 
-P.S All data is grabbed from https://www.weatherapi.com/
+## P.S 
+
+All data is grabbed from https://www.weatherapi.com/
 
 You need to create an account to get the API key from that.
         
