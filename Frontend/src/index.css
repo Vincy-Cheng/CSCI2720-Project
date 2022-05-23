@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: 'Jost', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image:url("../public/images/background.jpg");
+  background-repeat: initial;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
