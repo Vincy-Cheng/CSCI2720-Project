@@ -13,7 +13,7 @@ const cors = require("cors");
 const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
 mongoose.connect(
-  "mongodb+srv://stu002:p233183-@csci2720.6hfif.mongodb.net/stu002"
+  process.env.DBLink
 ); // This is the mongoose connect line.
 const bodyParser = require("body-parser");
 const res = require("express/lib/response");
@@ -22,7 +22,7 @@ const fetch = (...args) =>
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 app.use(express.static(path.resolve(__dirname, "../frontend/build")));
-const api_key = "d73c8d825739428089d134440222304";
+const api_key = process.env.APIKey;
 const db = mongoose.connection;
 // Upon connection fail
 db.on("error", console.error.bind(console, "Connection error:"));
@@ -55,7 +55,7 @@ db.once("open", function () {
 
   app.get("/example", (req, res) => {
     fetch(
-      "http://api.weatherapi.com/v1/current.json?key=d73c8d825739428089d134440222304&q=London"
+      `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=London`
     )
       .then((res) => res.json())
       .then((text) => res.send(text));
