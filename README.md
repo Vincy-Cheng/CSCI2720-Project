@@ -1,5 +1,15 @@
 # CSCI2720 Project (21-22 T2) - Weathering with Me
 
+## Programming Languages and relevant tools
+
+- React JS
+- Node JS
+- MongoDB
+- HTML
+- CSS
+- Postman (for testing HTTP)
+- MongoDB Compass (for checking the database)
+
 ## Group Members
 
 Alvin CHAN,
