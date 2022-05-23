@@ -12,6 +12,8 @@ const path = require("path");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
+const dotenv = require('dotenv');
+dotenv.config();
 mongoose.connect(
   process.env.DBLink
 ); // This is the mongoose connect line.
