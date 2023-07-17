@@ -55,6 +55,44 @@ Step 6: Backend same as Frontend
 Everything is ok now! check with your public IP address.
 
 
+CSCI2720 - Project Outline
+Group Members (SID):
+Alvin CHAN (1155108897)
+Cheng Yee Han (1155143426)
+Wong Ngou Shan (1155141835)
+Cheng Wing Lam (1155125313)
+Chow Chun Yeung (1155131406)
+Cheung Siu Fung (1155110966)
+Data Source:
+Option 1: Regional Weather in Hong Kong
+Data Source Link:
+https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-mean-air-temp
+https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-one-minute-mean-rh
+https://data.gov.hk/en-data/dataset/hk-hko-rss-latest-ten-minute-wind-info
+Our Planned Data Schema:
+User:
+- Username (unique + required) - String of 4~20 chars
+- Pwd (required) - String of 4~20 chars, hashed
+- Admin (required) - Boolean
+- Favourite (array of location._id) - Array
+Location:
+- Location Name (unique + required) - String
+- Location lat (unique + required) - String
+- Location long (unique + required) - String
+- User Comment (array of {User._id, comment: string}) - Array
+APIs to be used:
+- data.gov.hk (as per requirement)
+- Google Maps
+Platforms to be used:
+For our frontend framework, we will be adopting ReactJS to develop our User Interface. Our
+main reason for choosing ReactJS is because we believe that we can implement SPA easily
+with ReactJS. Furthermore, we might also include Bootstrap library for stylistic purposes.
+As for our backend framework, per requirement, we will be using NodeJS as the backbone of
+our server. However, for our Database, we will be using MongoDB as our database due to the
+fact that we are more familiar at implementing noSQL into our server than MySQL and other
+relational database.
+
+
 
 ## P.S 
 
