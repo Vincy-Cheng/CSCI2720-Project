@@ -99,4 +99,6 @@ relational database.
 All data is grabbed from https://www.weatherapi.com/
 
 You need to create an account to get the API key from that.
-        
+
+## Screenshots
+<img width="1399" alt="Screenshot 2023-07-18 at 12 55 21" src="https://github.com/Vincy-Cheng/CSCI2720-Project/assets/60846680/5b3f2c21-4d4b-4b6a-b643-0eada146470b">
